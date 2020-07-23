@@ -1,3 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 body, html { 
     height: auto;
 }
@@ -74,31 +83,10 @@ main p {
 }
 
 main picture {
-    display: grid;
-    margin: 0;
-    grid-template-areas: 
-        "lap mob"
-        "home sport";
-    grid-template-rows: auto 350px;
-    grid-template-columns: auto 50%;
-    column-gap: 10px;
-    row-gap: 30px;
-}
-
-section:nth-of-type(1) {
-    grid-area: lap;
-}
-
-section:nth-of-type(2) {
-    grid-area: mob;
-}
-
-section:nth-of-type(3) {
-    grid-area: home;
-}
-
-section:nth-of-type(4) {
-    grid-area: sport;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 main picture section ul li p {
@@ -162,9 +150,12 @@ main picture section ul li p {
 }
 
 @media (max-width: 768px) {
-    body {
+    main {
         background-color: rgb(179, 231, 231);
-        display: block;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     main picture {
@@ -195,12 +186,18 @@ main picture section ul li p {
         padding: 8%;
     }
 
+    header {
+        background-size: cover;
+        background-position: center;
+    }
+
     picture img {
         width: auto;
         height: 250px;
         margin: 5px;
         filter: drop-shadow(0px 10px 6px black);
     }
+
     main p {
         text-align: center;
         font-size: 20px;
@@ -211,9 +208,12 @@ main picture section ul li p {
 }
 
 @media (max-width: 468px) {
-    body {
+    main {
         background-color: rgb(179, 231, 231);
-        display: block;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     main picture {
@@ -225,6 +225,11 @@ main picture section ul li p {
         margin: 0;
     }
 
+    header {
+        background-size: cover;
+        background-position: center;
+    }
+
     header h1 {
         font-size: 40px;
         font-style: normal;
@@ -232,7 +237,7 @@ main picture section ul li p {
         text-align: center;
         color: rgb(250, 246, 246);
         margin: 15px;
-        padding-top: 30px;
+        padding-top: 50px;
     }
     
     header p {
@@ -241,7 +246,7 @@ main picture section ul li p {
         text-align: center;
         font-style: italic;
         color: cornsilk;
-        padding: 8%;
+        padding: 15%;
     }
 
     picture img {
@@ -260,13 +265,12 @@ main picture section ul li p {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    body {
+    main {
         background-color: rgb(179, 231, 231);
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
-        flex-direction: column;
     }
 
     main picture {
@@ -274,7 +278,6 @@ main picture section ul li p {
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
-        flex-direction: column;
         margin: 0;
     }
 
@@ -294,7 +297,12 @@ main picture section ul li p {
         text-align: center;
         font-style: italic;
         color: cornsilk;
-        padding: 10%;
+        padding: 5%;
+    }
+
+    header {
+        background-size: cover;
+        background-position: center;
     }
 
     picture img {

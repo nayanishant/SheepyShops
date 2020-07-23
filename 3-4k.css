@@ -332,11 +332,6 @@ aside ul li:hover a {
     aside div button {
         width: 100px;
     }
-
-    .btn {
-        width: 30px;
-        height: 30px;
-    }
 }
 
 @media (min-width: 468px) and (max-width: 768px) {
@@ -363,8 +358,9 @@ aside ul li:hover a {
     }
     
     header p {
-        font-size: 30px;
+        font-size: 25px;
         padding: 0 50px 0 50px;
+        font-weight: 100;
     }
 
     nav {

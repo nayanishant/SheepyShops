@@ -283,7 +283,7 @@ nav div button:hover::after {
     }
 }
 
-@media (max-width: 487px) {
+@media (max-width: 468px) {
     nav h1,
     nav ul {
         font-size: 0.9rem;

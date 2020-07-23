@@ -127,6 +127,7 @@ nav {
     font-size: 40px;
     justify-content: center;
 }
+
 main {
     grid-area: main;
     display: flex;
@@ -156,6 +157,7 @@ main .all a {
 .all a p {
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 #range {
@@ -181,7 +183,7 @@ main .all a {
 }
 
 aside .btn1 #home {
-    bottom: 3%;
+    bottom: 1%;
 }
 
 aside div button {
@@ -330,11 +332,6 @@ aside ul li:hover a {
     aside div button {
         width: 100px;
     }
-
-    .btn {
-        width: 30px;
-        height: 30px;
-    }
 }
 
 @media (min-width: 468px) and (max-width: 768px) {
@@ -355,13 +352,14 @@ aside ul li:hover a {
         width: 150px;
     }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
     header h1 {
         font-size: 50px;
     }
     
     header p {
-        font-size: 30px;
+        font-size: 25px;
         padding: 0 50px 0 50px;
     }
 
@@ -370,6 +368,6 @@ aside ul li:hover a {
     }
 
     .all a img {
-        width: 200px;
+        width: 180px;
     }
 }
